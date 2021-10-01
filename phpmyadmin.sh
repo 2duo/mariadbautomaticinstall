@@ -38,7 +38,7 @@ mv phpMyAdmin-*-all-languages phpmyadmin;
 $csl;
 chmod -R 0755 phpmyadmin;
 $csl;
-wget https://raw.githubusercontent.com/2duo/mariadbautomaticinstall/main/phpmyadmin.conf -P /etc/apache2/sites-available;
+wget https://raw.githubusercontent.com/2duo/mariadbautomaticinstall/main/phpmyadmin.conf -P /etc/apache2/conf-available;
 $csl;
 a2enconf phpmyadmin;
 $csl;
