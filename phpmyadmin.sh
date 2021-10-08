@@ -26,4 +26,5 @@ mkdir /usr/share/phpmyadmin/tmp/;
 chown -R www-data:www-data /usr/share/phpmyadmin/tmp/;
 echo "please create a user. thx for using the script <3";
 echo "---> Create User mysql -u root";
+echo "CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';"
 echo "GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' WITH GRANT OPTION;"
