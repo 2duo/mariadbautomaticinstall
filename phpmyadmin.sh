@@ -19,7 +19,7 @@ unzip phpmyadmin.zip;
 rm phpmyadmin.zip;
 mv phpMyAdmin-*-all-languages phpmyadmin;
 chmod -R 0755 phpmyadmin;
-wget -4 https://raw.githubusercontent.com/2duo/mariadbautomaticinstall/main/phpmyadmin.conf -P /etc/apache2/conf-available;
+wget -4 https://raw.githubusercontent.com/mrtuxa/mariadbautomaticinstall/main/phpmyadmin.conf -P /etc/apache2/conf-available;
 a2enconf phpmyadmin;
 systemctl reload apache2;
 mkdir /usr/share/phpmyadmin/tmp/;
